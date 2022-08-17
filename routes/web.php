@@ -10,9 +10,15 @@ use App\Http\Controllers\backend\SkillController;
 use App\Http\Controllers\frontend\IndexController;
 use Illuminate\Support\Facades\Route;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/dashboard', function () {
     return view('backend.index');
-});
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
 
 // Frontend All Routes
 Route::controller(IndexController::class)->group(function () {

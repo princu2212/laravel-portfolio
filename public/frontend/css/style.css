@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Section */
+nav {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px 50px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+  font-family: Poppins;
+}
+
+.nav-items {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 13px;
+}
+
+/* Hero Section */
+.btn {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: calibri;
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  background-color: #1e1e1e;
+  border: none;
+  outline: none;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: #17d1ac;
+  color: #000000;
+  transition: all ease 0.5s;
+  font-weight: bold;
+}
+
+.icons a {
+  color: #6c707c;
+  font-size: 1.5rem;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+  font-size: 1.7rem;
+  transition: 0.5s ease;
+}
+
+.fa-github:hover {
+  color: #010101;
+  font-size: 1.7rem;
+  transition: 0.5s ease;
+}
+
+.fa-gitlab:hover {
+  color: #fc6d27;
+  font-size: 1.7rem;
+  transition: 0.5s ease;
+}
+
+.fa-skype:hover {
+  color: #00aff0;
+  font-size: 1.7rem;
+  transition: 0.5s ease;
+}
+
+.fa-whatsapp:hover {
+  color: #25d366;
+  font-size: 1.7rem;
+  transition: 0.5s ease;
+}
+
+.hero {
+  background-color: #edf1fd;
+  width: 100%;
+  height: 90vh;
+}
+
+.hero .container {
+  padding-top: 6rem;
+}
+
+.name {
+  font-family: calibri;
+  padding-top: 2.5rem;
+}
+
+.name p:nth-child(1),
+.name .details {
+  color: #6c707c;
+  font-size: 16px;
+}
+
+.name h1 {
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #292929;
+}
+
+.hero img {
+  width: 90%;
+  height: 100%;
+}
+
+.black-line {
+  align-self: end;
+  width: 50%;
+  height: 15%;
+  margin-bottom: 4em;
+  position: absolute;
+  bottom: 0px;
+  left: -3%;
+  border-right: 1px solid rgba(41, 41, 41, 0.3);
+}
+
+.black-line::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 11px 0 11px;
+  border-color: #292929 transparent transparent transparent;
+  right: -0.7em;
+  bottom: -2px;
+}
+
+/* About Section */
+.about {
+  height: 85vh;
+  color: white;
+  background-color: #161616;
+}
+
+.about .row {
+  padding: 7rem 0;
+}
+
+.about img {
+  width: 70%;
+  height: 85%;
+}
+
+.about-text h1 {
+  font-family: popins;
+  font-size: 3rem;
+  color: #17d1ac;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Skill Section*/
+.skill {
+  background-color: white;
+  padding: 1rem 0;
+}
+.skill h1 {
+  font-weight: bolder;
+  font-family: popins;
+}
+.skill-column {
+  padding: 1rem 0;
+}
+.skill img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 2rem;
+}
+
+/* Experience Section*/
+.experience {
+  background-color: whitesmoke;
+}
+.experience h1 {
+  font-weight: bolder;
+  font-family: popins;
+}
+
+.experience .card {
+  width: 100%;
+  height: 100%;
+}
+.experience .card h4 {
+  padding: 1rem 0 0 1rem;
+  font-family: calibri;
+}
+
+.experience .card p {
+  padding-left: 1rem;
+  font-family: calibri;
+  font-weight: lighter;
+}
+
+/* Education Section*/
+.education {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+.education h3 {
+  font-weight: bolder;
+  font-family: popins;
+}
+.education h6,
+p {
+  font-family: calibri;
+  font-weight: lighter;
+}
+
+/* Project Section*/
+.project {
+  background-color: whitesmoke;
+}
+.project h1 {
+  font-weight: bolder;
+  font-family: popins;
+}
+.project .card {
+  width: 100%;
+  height: 100%;
+}
+.project .card .project-card-button {
+  padding-bottom: 1rem;
+}
+/* Contact Section*/
+.contact {
+  width: 100%;
+  height: 70vh;
+  background-color: #161616;
+  color: white;
+}
+
+form .form-control {
+  background-color: #161616;
+  color: white;
+}
+
+form .form-control:focus {
+  background-color: #161616;
+  color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 320px) {
+  .navbar {
+    padding: 0;
+  }
+  .hero {
+    height: 90vh;
+  }
+  .hero .container {
+    padding-top: 1rem;
+  }
+  .black-line {
+    margin-bottom: 1rem;
+  }
+  .hero img {
+    display: none;
+  }
+  .about {
+    height: 110vh;
+  }
+  .about .row {
+    padding: 2rem 0;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about p {
+    margin-bottom: 0px;
+  }
+  .contact {
+    height: 118vh;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .hero .container {
+    padding-top: 0rem;
+  }
+  .black-line {
+    margin-bottom: 1rem;
+  }
+  .hero img {
+    display: none;
+  }
+  .about {
+    height: 100%;
+  }
+  .about .row {
+    padding: 2rem 0;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .about p {
+    margin-bottom: 0px;
+  }
+  .contact {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .hero .container {
+    padding-top: 2rem;
+  }
+  .hero img {
+    display: none;
+  }
+  .black-line {
+    margin-bottom: 1rem;
+  }
+  .about {
+    height: 100%;
+  }
+  .about .row {
+    padding: 2rem 0;
+  }
+  .about img {
+    width: 50%;
+    height: 60%;
+  }
+  .about .about-text {
+    text-align: center;
+  }
+  .contact {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .name {
+    padding-top: 5rem;
+  }
+  .hero .container {
+    padding-top: 2rem;
+  }
+  .hero img {
+    display: block;
+    width: 100%;
+    height: 75%;
+    padding-top: 3rem;
+  }
+  .black-line {
+    margin-bottom: 1rem;
+  }
+  .about {
+    width: 100%;
+    height: 100%;
+  }
+  .about img {
+    width: 90%;
+    height: 75%;
+  }
+  .project-card-button {
+    width: 100%;
+  }
+  .project-card-button a {
+    font-size: 1rem;
+    padding: 1%;
+  }
+  .contact {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .contact {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .about {
+    height: 80vh;
+  }
+  .about img {
+    width: 80%;
+    height: 70%;
+  }
+  .contact {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .nav-items {
+    font-size: 1rem;
+  }
+  .name {
+    padding-top: 10rem;
+  }
+  .name h1 {
+    font-size: 4rem;
+  }
+  .name p:nth-child(1),
+  .name .details {
+    color: #6c707c;
+    font-size: 20px;
+  }
+  .hero img {
+    padding-top: 8rem;
+  }
+  .about .about-text p {
+    font-size: 1.5rem;
+  }
+  .about .about-text a {
+    font-size: 1.5rem;
+  }
+  .skill .container .skill-column img {
+    width: 7rem;
+    height: 5rem;
+  }
+  .project-card-button {
+    width: 15rem;
+  }
+  .project-card-button button {
+    font-size: 1rem;
+  }
+  .contact {
+    width: 100%;
+    height: 70vh;
+  }
+  .contact .container .contact-details h1 {
+    font-size: 3rem;
+  }
+  .contact .container .contact-details h6 {
+    font-size: 1.3rem;
+  }
+  .contact .container .contact-details p {
+    font-size: 1.5rem;
+  }
+  .contact .container .contact-form .form-floating {
+    font-size: 1.2rem;
+  }
+  .contact .container .contact-form button {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+}

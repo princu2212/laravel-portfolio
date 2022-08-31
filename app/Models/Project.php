@@ -8,5 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+
     protected $guarded = [];
+
+    public function multiimage()
+    {
+        return $this->hasMany(MultiImage::class, 'project_id', 'id');
+    }
 }

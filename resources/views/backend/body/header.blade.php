@@ -36,9 +36,7 @@
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end" style="">
-                    <!-- item-->
-                    <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
-
+                   
                     <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf

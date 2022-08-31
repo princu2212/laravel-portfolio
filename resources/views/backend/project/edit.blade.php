@@ -71,8 +71,13 @@
                                 enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
+                                @php
 
+                                @endphp
                                 <div class="row mb-3 mt-5">
+                                    @php
+                                        $multiImgs = App\Models\MultiImage::where('project_id', $project->id)->get();
+                                    @endphp
                                     @foreach ($multiImgs as $img)
                                         <div class="col-md-3">
                                             <div class="card">

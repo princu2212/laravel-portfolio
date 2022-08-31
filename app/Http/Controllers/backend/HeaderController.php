@@ -5,7 +5,6 @@ namespace App\Http\Controllers\backend;
 use App\Http\Controllers\Controller;
 use App\Models\Header;
 use Illuminate\Http\Request;
-
 class HeaderController extends Controller
 {
     public function create()

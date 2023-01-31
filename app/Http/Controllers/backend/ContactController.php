@@ -17,6 +17,10 @@ class ContactController extends Controller
     public function update(Request $request, $id)
     {
         $contact = contact::find($id);
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->mobile = $request->mobile;
+        $contact->address = $request->address;
         $contact->linkedin = $request->linkedin;
         $contact->github = $request->github;
         $contact->gitlab = $request->gitlab;

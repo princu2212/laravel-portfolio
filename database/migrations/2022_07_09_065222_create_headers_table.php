@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('long_title');
             $table->text('description');
             $table->string('file');
+            $table->bigInteger('count')->default(0);
             $table->string('linkedin');
             $table->string('github');
             $table->string('gitlab');

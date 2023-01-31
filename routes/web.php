@@ -10,10 +10,6 @@ use App\Http\Controllers\backend\SkillController;
 use App\Http\Controllers\frontend\IndexController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/dashboard', function () {
     return view('backend.index');
 })->middleware(['auth'])->name('dashboard');
@@ -29,6 +25,7 @@ Route::controller(IndexController::class)->group(function () {
 Route::controller(HeaderController::class)->group(function () {
     Route::get('/header/create', 'create')->name('header.create');
     Route::put('/header/update/{id}', 'update')->name('header.update');
+    Route::get('counter', 'counter')->name('counter');
 });
 
 Route::controller(AboutController::class)->group(function () {

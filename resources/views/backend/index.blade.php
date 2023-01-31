@@ -23,7 +23,10 @@
                             <div class="d-flex">
                                 <div class="flex-grow-1">
                                     <p class="text-truncate font-size-14 mb-2">Resume Downloads</p>
-                                    <h4 class="mb-2">20</h4>
+                                    @php
+                                        $totalCount = App\Models\Header::sum('count');
+                                    @endphp
+                                    <h4 class="mb-2">{{ $totalCount }}</h4>
                                 </div>
                                 <div class="avatar-sm">
                                     <span class="avatar-title bg-light text-primary rounded-3">

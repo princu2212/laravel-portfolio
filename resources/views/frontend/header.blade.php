@@ -35,7 +35,7 @@
                         <p>{{ $header->short_title }}</p>
                         <h1>I'm <font color="#17d1ac">Prince</font> Yadav</h1>
                         <p class="details">{!! $header->description !!}</p>
-                        <a href="{{ 'upload/file/' . $header->file }}" class="btn" target="_blank">Download CV</a>
+                        <a href="{{ 'upload/file/' . $header->file }}" class="btn" target="_blank" data-id="{{ $header->id }}">Download CV</a>
                     </div>
                     <div class="icons d-flex my-4">
                         <a class="nav-link" href="{{ $header->linkedin }}" target="_blank"><i
@@ -58,3 +58,24 @@
         <div class="black-line"></div>
     </section>
 </section>
+
+{{-- jQuery for download --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.btn').click(function() {
+            var header_id = $(this).attr('data-id');
+
+            $.ajax({
+                type: 'GET',
+                url: "{{ route('counter') }}",
+                data: {
+                    id: header_id
+                },
+                success: function(data) {
+                    $(".count" + header_id).text(data.headerCount);
+                }
+            });
+        });
+    });
+</script>

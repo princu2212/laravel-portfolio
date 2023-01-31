@@ -29,12 +29,12 @@ $contact = App\Models\Contact::find(1);
                     @csrf
                     <div class="form-floating">
                         <input type="name" class="form-control" id="name" name="name"
-                            placeholder="Enter Name">
+                            placeholder="Enter Name" required>
                         <label for="name">Name</label>
                     </div>
                     <div class="form-floating my-3">
                         <input type="email" class="form-control" id="email" name="email"
-                            placeholder="Enter Email">
+                            placeholder="Enter Email" required>
                         <label for="email">Email address</label>
                     </div>
                     <div class="form-floating">

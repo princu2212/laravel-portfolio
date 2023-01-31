@@ -50,4 +50,15 @@ class HeaderController extends Controller
 
         return redirect()->back()->with($notification);
     } // end method
+
+    public function counter(Request $request)
+    {
+        $counter = Header::find($request->id);
+        $counter->count = $counter->count + 1;
+        $counter->save();
+
+        $headerCount = $counter->count;
+
+        return response()->json([' headerCount' => $headerCount]);
+    }
 }
